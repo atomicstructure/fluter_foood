@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipes/recipe.dart';
+import 'package:recipes/recipe_detail.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -27,7 +28,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   builder: (context) {
                     // 10
                     // TODO: Replace return with return RecipeDetail()
-                    return const Text('Detail page');
+                    return RecipeDetail(
+                      recipe: Recipe.samples[index],
+                    );
                   },
                 ),
               );
