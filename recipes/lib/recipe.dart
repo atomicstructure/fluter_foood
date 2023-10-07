@@ -1,11 +1,11 @@
 class Recipe {
-  String label;
-  String imageUrl;
-  int servings;
-  List<Ingredient> ingredients;
+  const Recipe(this.label, this.imageUrl, this.servings, this.ingredients);
+  final String label;
+  final String imageUrl;
+  final int servings;
+  final List<Ingredient> ingredients;
   // TODO: Add servings and ingredients here
 
-  Recipe(this.label, this.imageUrl, this.servings, this.ingredients);
   // TODO; Add List<Recipe> here
   static List<Recipe> samples = [
     Recipe(
