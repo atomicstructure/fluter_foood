@@ -9,17 +9,21 @@ class RecipeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = ThemeData();
 
-    return MaterialApp(
-      title: 'Recipe Calculator',
-      theme: theme.copyWith(
-        colorScheme: theme.colorScheme.copyWith(
-          primary: Colors.grey,
-          secondary: Colors.black,
-        ),
-        // useMaterial3: true,
-      ),
-      home: const MyHomePage(
+    return Center(
+      child: MaterialApp(
         title: 'Recipe Calculator',
+        theme: theme.copyWith(
+          colorScheme: theme.colorScheme.copyWith(
+            primary: Colors.grey,
+            secondary: Colors.black,
+          ),
+          // useMaterial3: true,
+        ),
+        home: const Center(
+          child: MyHomePage(
+            title: 'Recipe Calculator',
+          ),
+        ),
       ),
     );
   }

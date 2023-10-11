@@ -34,7 +34,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
       ),
       body: SafeArea(
         child: Column(
-          children: [
+          children: <Widget>[
             SizedBox(
               height: 300,
               width: double.infinity,
